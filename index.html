@@ -363,7 +363,7 @@ width: 150px;
         var begingdate='2022-1-1';
         var nowdate = new Date();
         var differday = Date.parse(nowdate) -Date.parse(begingdate) 
-        var days = Math.floor(differday / (1000 * 3600 * 24)) 
+        var days = Math.floor((differday+6) / (1000 * 3600 * 24)) 
         document.getElementById("marqueeStr").innerText=fvalue[days%16];
         </script>
           <div class="bank_update" id="changeWay">
